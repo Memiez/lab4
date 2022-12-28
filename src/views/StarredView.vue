@@ -17,6 +17,9 @@ const frameList = [
     rating: 15,
   },
 ];
+function changeRating(index: number, rating: number) {
+  console.log("action" + index + " :" + rating);
+}
 </script>
 
 <template>
@@ -27,6 +30,8 @@ const frameList = [
           :name="item.name"
           :img="item.img"
           :rating="item.rating"
+          :index="index"
+          @change="changeRating"
         ></FrameworkPop>
       </v-col>
     </v-row>

@@ -4,14 +4,21 @@ const props = defineProps<{
   name: string;
   img: string;
   rating: number;
+  index: number;
+}>();
+
+const emits = defineEmits<{
+  (e: "change", index: number, rating: number): void;
 }>();
 
 const count = ref(props.rating);
 function inc() {
   count.value++;
+  emits("change", props.index, count.value);
 }
 function dec() {
   count.value--;
+  emits("change", props.index, count.value);
 }
 </script>
 
