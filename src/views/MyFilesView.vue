@@ -1,7 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FancyButton from "@/components/FancyButton.vue";
+import { mdiFaceWoman, mdiArrowBottomRightBoldOutline } from "@mdi/js";
+</script>
 
 <template>
-  <div>My Files</div>
-  <router-link to="/starred">Starred</router-link>
-  <v-btn to="/starred">Starred</v-btn>
+  <v-container>
+    <v-row>
+      <v-col
+        ><FancyButton
+          ><v-icon :icon="mdiFaceWoman" />Hug Me
+          <template v-slot:tail> Tail </template>
+        </FancyButton></v-col
+      ><v-col
+        ><FancyButton
+          ><v-icon :icon="mdiArrowBottomRightBoldOutline" />Click Me
+          <template v-slot:tail> My Tail </template>
+        </FancyButton></v-col
+      >
+    </v-row>
+  </v-container>
 </template>
