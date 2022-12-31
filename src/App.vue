@@ -31,9 +31,9 @@
         ></v-list-item>
         <v-list-item
           :prepend-icon="mdiAccountMultiple"
-          title="Shared with me"
-          value="shared"
-          to="/share-with-me"
+          title="Profile Page"
+          value="profile"
+          to="/profile-page"
         ></v-list-item>
         <v-list-item
           :prepend-icon="mdiStar"
