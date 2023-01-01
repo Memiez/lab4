@@ -1,32 +1,14 @@
-<script setup lang="ts">
-import {} from "vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <v-card class="mx-auto" max-width="434" tile>
+  <v-card class="mx-auto" max-width="350">
     <v-img
-      height="100%"
-      src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+      class="align-end text-white"
+      height="400"
+      src="https://i.chzbgr.com/full/9442674176/h7E3950EA/one-bossy-mama"
+      cover
     >
-      <v-row align="end" class="fill-height">
-        <v-col align-self="start" class="pa-0" cols="12">
-          <v-avatar class="profile" color="grey" size="164" tile>
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
-            ></v-img>
-          </v-avatar>
-        </v-col>
-        <v-col class="py-0">
-          <v-list-item color="rgba(0, 0, 0, .4)" dark>
-            <v-list-item-content>
-              <v-list-item-title class="text-h6">
-                Marcus Obrien
-              </v-list-item-title>
-              <v-list-item-subtitle>Network Engineer</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-col>
-      </v-row>
+      <v-card-title>Hello, I'm Meow Meow</v-card-title>
     </v-img>
   </v-card>
 </template>
