@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { mdiFaceWomanShimmerOutline } from "@mdi/js";
+import {
+  mdiFaceWomanShimmerOutline,
+  mdiAccountDetailsOutline,
+  mdiDuck,
+  mdiAccountSchoolOutline,
+  mdiMusicNotePlus,
+} from "@mdi/js";
 </script>
 
 <template>
@@ -22,16 +28,20 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
             <v-table>
               <thead>
                 <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
+                  <th>Ms. Meow Meow</th>
+                  <th>Contact</th>
                 </tr>
                 <tr>
-                  <td>Peter</td>
-                  <td>Griffin</td>
+                  <td>Position</td>
+                  <td>Address:</td>
                 </tr>
                 <tr>
-                  <td>Lois</td>
-                  <td>Griffin</td>
+                  <td>ใส่ๆ เข้าไป</td>
+                  <td>Phone :</td>
+                </tr>
+                <tr>
+                  <td>ใส่อีก</td>
+                  <td>Email :</td>
                 </tr>
               </thead>
             </v-table>
@@ -45,7 +55,7 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
                 <v-icon
                   size="large"
                   class="mr-4"
-                  icon="mdiFaceWomanShimmerOutline"
+                  :icon="mdiFaceWomanShimmerOutline"
                 ></v-icon>
                 <h2 class="font-weight-light">About Me</h2>
               </v-card-title>
@@ -61,7 +71,7 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
             <v-card>
               <v-card-title class="bg-amber-lighten-1 justify-end">
                 <h2 class="mr-4 font-weight-light">Experience</h2>
-                <v-icon size="large" icon="mdi-home-outline"></v-icon>
+                <v-icon size="large" :icon="mdiAccountDetailsOutline"></v-icon>
               </v-card-title>
               <v-card-text>
                 Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
@@ -74,11 +84,7 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
           <v-timeline-item dot-color="cyan-lighten-1" fill-dot>
             <v-card>
               <v-card-title class="bg-cyan-lighten-1">
-                <v-icon
-                  class="mr-4"
-                  size="large"
-                  icon="mdi-email-outline"
-                ></v-icon>
+                <v-icon class="mr-4" size="large" :icon="mdiDuck"></v-icon>
                 <h2 class="font-weight-light">Skills</h2>
               </v-card-title>
               <v-card-text>
@@ -93,10 +99,7 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
             <v-card>
               <v-card-title class="bg-red-lighten-1 justify-end">
                 <h2 class="mr-4 font-weight-light">Education</h2>
-                <v-icon
-                  size="large"
-                  icon="mdi-account-multiple-outline"
-                ></v-icon>
+                <v-icon size="large" :icon="mdiAccountSchoolOutline"></v-icon>
               </v-card-title>
               <v-card-text>
                 Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
@@ -112,9 +115,9 @@ import { mdiFaceWomanShimmerOutline } from "@mdi/js";
                 <v-icon
                   class="mr-4"
                   size="large"
-                  icon="mdi-phone-in-talk"
+                  :icon="mdiMusicNotePlus"
                 ></v-icon>
-                <h2 class="font-weight-light">Contact</h2>
+                <h2 class="font-weight-light">Hobby</h2>
               </v-card-title>
               <v-card-text>
                 Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
