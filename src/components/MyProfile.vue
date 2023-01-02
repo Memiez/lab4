@@ -1,103 +1,130 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { mdiFaceWomanShimmerOutline } from "@mdi/js";
+</script>
 
 <template>
-  <v-card class="mx-auto" max-width="350" variant="outlined">
-    <v-img
-      class="align-end text-white"
-      height="400"
-      src="https://i.chzbgr.com/full/9442674176/h7E3950EA/one-bossy-mama"
-      cover
-    >
-      <v-card-title>Hello, I'm Meow Meow</v-card-title>
-    </v-img>
-  </v-card>
+  <v-container>
+    <v-row>
+      <v-col>
+        <v-card class="mx-auto" max-width="350" variant="outlined">
+          <v-img
+            class="align-end text-white"
+            height="400"
+            src="https://i.chzbgr.com/full/9442674176/h7E3950EA/one-bossy-mama"
+            cover
+          >
+            <v-card-title>Hello, I'm Meow Meow</v-card-title>
+          </v-img>
+        </v-card>
 
-  <v-table>
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-      </tr>
-      <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
-      </tr>
-      <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
-      </tr>
-    </thead>
-  </v-table>
+        <v-row justify="center">
+          <v-col cols="6">
+            <v-table>
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                </tr>
+                <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                </tr>
+                <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                </tr>
+              </thead>
+            </v-table>
+          </v-col>
+        </v-row>
 
-  <v-timeline>
-    <v-timeline-item dot-color="purple-lighten-2" fill-dot>
-      <v-card>
-        <v-card-title class="bg-purple-lighten-2">
-          <v-icon size="large" class="mr-4" icon="mdi-magnify"></v-icon>
-          <h2 class="font-weight-light">Title 1</h2>
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
-          imperdiet nec ut, sed euismod convenire principes at. Est et nobis
-          iisque percipit.
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
+        <v-timeline>
+          <v-timeline-item dot-color="purple-lighten-2" fill-dot>
+            <v-card>
+              <v-card-title class="bg-purple-lighten-2">
+                <v-icon
+                  size="large"
+                  class="mr-4"
+                  icon="mdiFaceWomanShimmerOutline"
+                ></v-icon>
+                <h2 class="font-weight-light">About Me</h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                scaevola imperdiet nec ut, sed euismod convenire principes at.
+                Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
 
-    <v-timeline-item dot-color="amber-lighten-1" fill-dot size="x-small">
-      <v-card>
-        <v-card-title class="bg-amber-lighten-1 justify-end">
-          <h2 class="mr-4 font-weight-light">Title 2</h2>
-          <v-icon size="large" icon="mdi-home-outline"></v-icon>
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
-          imperdiet nec ut, sed euismod convenire principes at. Est et nobis
-          iisque percipit.
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
+          <v-timeline-item dot-color="amber-lighten-1" fill-dot size="x-small">
+            <v-card>
+              <v-card-title class="bg-amber-lighten-1 justify-end">
+                <h2 class="mr-4 font-weight-light">Experience</h2>
+                <v-icon size="large" icon="mdi-home-outline"></v-icon>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                scaevola imperdiet nec ut, sed euismod convenire principes at.
+                Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
 
-    <v-timeline-item dot-color="cyan-lighten-1" fill-dot>
-      <v-card>
-        <v-card-title class="bg-cyan-lighten-1">
-          <v-icon class="mr-4" size="large" icon="mdi-email-outline"></v-icon>
-          <h2 class="font-weight-light">Title 3</h2>
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
-          imperdiet nec ut, sed euismod convenire principes at. Est et nobis
-          iisque percipit.
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
+          <v-timeline-item dot-color="cyan-lighten-1" fill-dot>
+            <v-card>
+              <v-card-title class="bg-cyan-lighten-1">
+                <v-icon
+                  class="mr-4"
+                  size="large"
+                  icon="mdi-email-outline"
+                ></v-icon>
+                <h2 class="font-weight-light">Skills</h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                scaevola imperdiet nec ut, sed euismod convenire principes at.
+                Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
 
-    <v-timeline-item dot-color="red-lighten-1" fill-dot size="x-small">
-      <v-card>
-        <v-card-title class="bg-red-lighten-1 justify-end">
-          <h2 class="mr-4 font-weight-light">Title 4</h2>
-          <v-icon size="large" icon="mdi-account-multiple-outline"></v-icon>
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
-          imperdiet nec ut, sed euismod convenire principes at. Est et nobis
-          iisque percipit.
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
+          <v-timeline-item dot-color="red-lighten-1" fill-dot size="x-small">
+            <v-card>
+              <v-card-title class="bg-red-lighten-1 justify-end">
+                <h2 class="mr-4 font-weight-light">Education</h2>
+                <v-icon
+                  size="large"
+                  icon="mdi-account-multiple-outline"
+                ></v-icon>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                scaevola imperdiet nec ut, sed euismod convenire principes at.
+                Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
 
-    <v-timeline-item dot-color="green-lighten-1" fill-dot>
-      <v-card>
-        <v-card-title class="bg-green-lighten-1">
-          <v-icon class="mr-4" size="large" icon="mdi-phone-in-talk"></v-icon>
-          <h2 class="font-weight-light">Title 5</h2>
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
-          imperdiet nec ut, sed euismod convenire principes at. Est et nobis
-          iisque percipit.
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
-  </v-timeline>
+          <v-timeline-item dot-color="green-lighten-1" fill-dot>
+            <v-card>
+              <v-card-title class="bg-green-lighten-1">
+                <v-icon
+                  class="mr-4"
+                  size="large"
+                  icon="mdi-phone-in-talk"
+                ></v-icon>
+                <h2 class="font-weight-light">Contact</h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                scaevola imperdiet nec ut, sed euismod convenire principes at.
+                Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+        </v-timeline>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
