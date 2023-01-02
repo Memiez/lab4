@@ -11,6 +11,24 @@
       <v-card-title>Hello, I'm Meow Meow</v-card-title>
     </v-img>
   </v-card>
+
+  <v-table>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+      </tr>
+    </thead>
+  </v-table>
+
   <v-timeline>
     <v-timeline-item dot-color="purple-lighten-2" fill-dot>
       <v-card>
@@ -82,13 +100,4 @@
       </v-card>
     </v-timeline-item>
   </v-timeline>
-
-  <v-table>
-    <thead>
-      <tr>
-        <th class="text-left">Name</th>
-        <th class="text-left">Calories</th>
-      </tr>
-    </thead>
-  </v-table>
 </template>
